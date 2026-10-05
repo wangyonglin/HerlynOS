@@ -1,0 +1,39 @@
+{
+    "version": 3,
+    "configurePresets": [
+        {
+            "name": "win32-pc",
+            "displayName": "Win32 PC",
+            "generator": "MinGW Makefiles",
+            "binaryDir": "${workspaceFolder}/../build_win32",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "HER_PLATFORM": "WIN32",
+                "CMAKE_C_COMPILER": "C:/Users/Administrator/Downloads/w64devkit/bin/gcc.exe",
+                "CMAKE_MAKE_PROGRAM": "C:/Users/Administrator/Downloads/w64devkit/bin/make.exe"
+            }
+        },
+        {
+            "name": "unix-pc",
+            "displayName": "Unix PC(MSYS2/Linux)",
+            "generator": "Unix Makefiles",
+            "binaryDir": "${workspaceFolder}/build_unix",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "HER_PLATFORM": "UNIX",
+                "CMAKE_C_COMPILER": "gcc"
+            }
+        },
+        {
+            "name": "soc-stm32u5",
+            "displayName": "SoC STM32U5",
+            "generator": "Unix Makefiles",
+            "binaryDir": "${workspaceFolder}/build_soc",
+            "cacheVariables": {
+                "CMAKE_BUILD_TYPE": "Debug",
+                "HER_PLATFORM": "SOC",
+                "CMAKE_TOOLCHAIN_FILE": "${sourceDir}/cmake/arm-none-eabi.cmake"
+            }
+        }
+    ]
+}
