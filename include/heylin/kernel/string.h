@@ -1,7 +1,7 @@
 #ifndef __KERNEL_STRING_H__
 #define __KERNEL_STRING_H__
 
-#include "herlyn/kernel/lib.h"
+#include "heylin/kernel/lib.h"
 #include <stdint.h>
 
 

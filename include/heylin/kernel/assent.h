@@ -1,7 +1,7 @@
 #ifndef __KERNAL_ASSENT_H__
 #define __KERNAL_ASSENT_H__
 
-#include "herlyn/kernel/string.h"
+#include "heylin/kernel/string.h"
 
 #ifdef HER_USE_DEBUG
 #define ASSENT(cond)  do{ if(!(cond)){ HER_AssertFailed(__FILE__, __LINE__); } }while(0)

@@ -10,7 +10,7 @@
 #ifndef YIJING_H
 #define YIJING_H
 
-#include "herlyn/herlyn.h"
+#include "heylin/heylin.h"
 
 /**
  * @brief 拼装：上卦(0~7) + 下卦(0~7) → 卦raw值

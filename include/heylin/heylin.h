@@ -7,10 +7,10 @@
  *
  * Copyright (C) 2026 Herlyn. All rights reserved.
  */
-#ifndef __HERLYN_H
-#define __HERLYN_H
+#ifndef __HEYLIN_H
+#define __HEYLIN_H
 
-#include "herlyn/kernel/string.h"
-#include "herlyn/kernel/assent.h"
+#include "heylin/kernel/string.h"
+#include "heylin/kernel/assent.h"
 
-#endif /* __HERLYN_H */
+#endif /* __HEYLIN_H */
