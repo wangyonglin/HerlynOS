@@ -17,9 +17,9 @@
  * @param upper  上卦(外卦) 0~7
  * @param lower  下卦(内卦) 0~7
  */
-#define HER_HEX_PACK(upper, lower)  ((((HER_UInt8Def)(upper) & 0x07U) << 3) | ((lower) & 0x07U))
-#define HER_HEX_GET_UPPER(raw)      (((raw) >> 3) & 0x07U)
-#define HER_HEX_GET_LOWER(raw)      ((raw) & 0x07U)
+#define HEY_HEX_PACK(upper, lower)  ((((HEY_UInt8Def)(upper) & 0x07U) << 3) | ((lower) & 0x07U))
+#define HEY_HEX_GET_UPPER(raw)      (((raw) >> 3) & 0x07U)
+#define HEY_HEX_GET_LOWER(raw)      ((raw) & 0x07U)
 
 /**
  * @brief 六十四卦联合体
@@ -27,25 +27,25 @@
  */
 typedef union
 {
-    HER_UInt8Def raw;
+    HEY_UInt8Def raw;
     struct
     {
-        HER_UInt8Def lower :3; // 下卦（内卦，初、二、三爻）
-        HER_UInt8Def upper :3; // 上卦（外卦，四、五、上爻）
-        HER_UInt8Def rsv   :2; // 保留位，填充对齐至8bit
+        HEY_UInt8Def lower :3; // 下卦（内卦，初、二、三爻）
+        HEY_UInt8Def upper :3; // 上卦（外卦，四、五、上爻）
+        HEY_UInt8Def rsv   :2; // 保留位，填充对齐至8bit
     } bits;
-} HER_HexagramDef;
+} HEY_HexagramDef;
 
 /**
  * @brief 易经卦信息结构体
  */
-typedef struct HER_YiJingDef
+typedef struct HEY_YiJingDef
 {
-    HER_HexagramDef hex;                // 卦象编码
-    const HER_CharDef * name;           // 卦名称，const防止字符串被意外修改
-} HER_YiJingDef;
+    HEY_HexagramDef hex;                // 卦象编码
+    const HEY_CharDef * name;           // 卦名称，const防止字符串被意外修改
+} HEY_YiJingDef;
 
 // 六十四卦常量表（文王序）
-extern const HER_YiJingDef g_YiJingData[64];
+extern const HEY_YiJingDef g_YiJingData[64];
 
 #endif /* YIJING_H */

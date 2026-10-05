@@ -3,13 +3,13 @@
 
 #include "heylin/kernel/string.h"
 
-#ifdef HER_USE_DEBUG
-#define ASSENT(cond)  do{ if(!(cond)){ HER_AssertFailed(__FILE__, __LINE__); } }while(0)
+#ifdef HEY_USE_DEBUG
+#define ASSENT(cond)  do{ if(!(cond)){ HEY_AssertFailed(__FILE__, __LINE__); } }while(0)
 #else
 #define ASSENT(cond)  do{}while(0)
 #endif
 
-void HER_AssertFailed(const char *file, HER_UInt32Def line);
+void HEY_AssertFailed(const char *file, HER_UInt32Def line);
 
 #endif /**__KERNAL_ASSENT_H__**/
 
