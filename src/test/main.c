@@ -13,7 +13,7 @@
 int main(void)
 {
     // 裸机 Cortex-M 程序：main 一般永不返回
-    HER_StatusDef ret;
+    HL_StatusDef ret;
     printf("hy  HerlynOS\r\n");
     // 在这里放系统初始化
 

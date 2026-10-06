@@ -4,57 +4,57 @@
 /**
  * @brief 平台掩码定义
  */
-#ifndef HEY_PLATFORM_NONE
-#define HEY_PLATFORM_NONE         (0U)
+#ifndef HL_PLATFORM_NONE
+#define HL_PLATFORM_NONE         (0U)
 #endif
-#ifndef HEY_PLATFORM_LINUX
-#define HEY_PLATFORM_LINUX        (1U << 0)
+#ifndef HL_PLATFORM_LINUX
+#define HL_PLATFORM_LINUX        (1U << 0)
 #endif
-#ifndef HEY_PLATFORM_WIN32
-#define HEY_PLATFORM_WIN32        (1U << 1)
+#ifndef HL_PLATFORM_WIN32
+#define HL_PLATFORM_WIN32        (1U << 1)
 #endif
 
-#ifndef HEY_PLATFORM_STM32U5XX
-#define HEY_PLATFORM_STM32U5XX    (1U << 2)
+#ifndef HL_PLATFORM_STM32U5XX
+#define HL_PLATFORM_STM32U5XX    (1U << 2)
 #endif
 /* 无符号固定宽度类型 */
-typedef unsigned char      HEY_UInt8Def;
-typedef unsigned short     HEY_UInt16Def;
-typedef unsigned int       HEY_UInt32Def;
-typedef unsigned long long HEY_UInt64Def;
+typedef unsigned char      HL_UInt8Def;
+typedef unsigned short     HL_UInt16Def;
+typedef unsigned int       HL_UInt32Def;
+typedef unsigned long long HL_UInt64Def;
 
 /* 有符号固定宽度类型 */
-typedef signed char        HEY_Int8Def;
-typedef signed short       HEY_Int16Def;
-typedef signed int         HEY_Int32Def;
-typedef signed long long   HEY_Int64Def;
+typedef signed char        HL_Int8Def;
+typedef signed short       HL_Int16Def;
+typedef signed int         HL_Int32Def;
+typedef signed long long   HL_Int64Def;
 
 /* volatile 寄存器访问类型 */
-typedef volatile unsigned char      HEY_VUInt8Def;
-typedef volatile unsigned short     HEY_VUInt16Def;
-typedef volatile unsigned int       HEY_VUInt32Def;
+typedef volatile unsigned char      HL_VUInt8Def;
+typedef volatile unsigned short     HL_VUInt16Def;
+typedef volatile unsigned int       HL_VUInt32Def;
 
 /* 浮点类型 */
-typedef float              HEY_Float32Def;
-typedef double             HEY_Float64Def;
+typedef float              HL_Float32Def;
+typedef double             HL_Float64Def;
 
 /* 字符串 (和标准库兼容) */
-typedef char        HEY_CharDef;
-typedef char*       HEY_StringDef;
+typedef char        HL_CharDef;
+typedef char*       HL_StringDef;
 
 
 /* 布尔类型，统一风格：unsigned char */
-typedef unsigned char      HEY_BoolDef;
+typedef unsigned char      HL_BoolDef;
 
 /* 函数返回状态码类型 */
-typedef signed char        HEY_StatusDef;
+typedef signed char        HL_StatusDef;
 
 /* 预处理开关常量，仅用于 #if 条件编译 */
-#define HEY_TRUE     			1
-#define HEY_FALSE    			0
+#define HL_TRUE     			1
+#define HL_FALSE    			0
 
 /* 运行时布尔常量，带类型转换，用于代码内赋值判断 */
-#define Enabled          	    HEY_TRUE
-#define Disabled                HEY_FALSE
+#define Enabled          	    HL_TRUE
+#define Disabled                HL_FALSE
 
 #endif /* __KERNEL_DEFS_H__ */
